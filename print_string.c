@@ -3,8 +3,9 @@
 #include <stdlib.h>
 #include <stdarg.h>
 /**
- *
- *
+ * print_string - a function that print a string
+ * @s: the string to be printed
+ * Return: the lenght of the printed string
  */
 int print_string(char *s)
 {
@@ -14,8 +15,7 @@ int print_string(char *s)
 		_puts(s);
 		return (_strlen(s));
 	}
-	else
-	{
-		return(0);
-	}
+	s = "(null)";
+	_puts(s);
+	return (_strlen(s));
 }

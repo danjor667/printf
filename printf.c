@@ -2,8 +2,9 @@
 #include "main.h"
 #include <stdarg.h>
 /**
- *
- *
+ * _printf - a function that replicate printf
+ * @format: input format or specifier
+ * Return: the lenght of the output
  */
 int _printf(const char *format, ...)
 {
@@ -20,13 +21,13 @@ int _printf(const char *format, ...)
 				case 'c':
 				{
 					char c = va_arg(args, int);
-					print_char(c);
+					count += print_char(c);
 					break;
 				}
 				case 's':
 				{
 					char* s = va_arg(args, char*);
-					print_string(s);
+					count += print_string(s);
 					break;
 				}
 				case '%':
@@ -35,12 +36,20 @@ int _printf(const char *format, ...)
 					count += 1;
 					break;
 				}
-				case 'd' || 'i':
+				case 'd':
+				case 'i':
 				{
-					int i = va_arg(args, int)
-					/* print_int function*/
+					int i = va_arg(args, int);
+					count += print_int(i);
 					break;
 				}
+				case 'b':
+				{
+					unsigned int i = va_arg(args unsigned int);
+					/* call the print_binary funct*/
+					break;
+				}
+
 								     
 			}
 		}
