@@ -45,8 +45,8 @@ int _printf(const char *format, ...)
 				}
 				case 'b':
 				{
-					unsigned int i = va_arg(args unsigned int);
-					/* call the print_binary funct*/
+					unsigned int i = va_arg(args, unsigned int);
+					count += print_binary(i);
 					break;
 				}
 
