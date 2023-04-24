@@ -27,7 +27,7 @@ int print_int(int i)
  */
 int print_int_helper(int i)
 {
-	if (i < 0)
+	if (i <  0)
 	{
 		_putchar('-');
 		i *= -1;

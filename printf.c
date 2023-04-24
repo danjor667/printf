@@ -49,6 +49,12 @@ int _printf(const char *format, ...)
 					count += print_binary(i);
 					break;
 				}
+				case 'o':
+				{
+					unsigned int i = va_arg(args, unsigned int);
+					count += print_octal(i);
+					break;
+				}
 
 								     
 			}
