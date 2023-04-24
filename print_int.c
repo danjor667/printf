@@ -9,14 +9,14 @@
  */
 int print_int(int i)
 {
-	int len;
+	int len = 0;
 
 	if (i == 0)
 	{
 		_putchar('0');
 		return (1);
 	}
-	len = print_int_helper(i);
+	len += print_int_helper(i);
 	return (len);
 }
 /*creating the helper funct*/
