@@ -15,37 +15,29 @@ int _printf(const char *format, ...)
 		if (format[i] == '%')
 		{
 			if (format[i + 1] == 'c')
-			{
 				count += print_char(va_arg(args, int));
-			}
 			else if (format[i + 1] == 's')
-			{
 				count += print_string(va_arg(args, char*));
-			}
 			else if (format[i + 1] == '%')
-			{
-				_putchar('%');
-				count += 1;
-			}
+				count += _putchar('%');
 			else if (format[i + 1] == 'd' || format[i + 1] == 'i')
-			{
 				count += print_int(va_arg(args, int));
-			}
 			else if (format[i + 1] == 'b')
-			{
 				count += print_binary(va_arg(args, unsigned int));
-			}
 			else if (format[i + 1] == 'o')
-			{
 				count += print_octal(va_arg(args, unsigned int));
+			else if (format[i + 1] == 'u')
+				count += print_ui(va_arg(args, unsigned int));
+			else if (format[i + 1] == 'X')
+				count += print_hexa_cap(va_arg(args, unsigned int));
+			else if (format[i + 1] == 'x')
+			{
+				count += print_hexa_low(va_arg(args, unsigned int));
 			}
 			i++;
 		}
 		else
-		{
-			_putchar(format[i]);
-			count++;
-		}
+			count += _putchar(format[i]);
 	}
 	va_end(args);
 	return (count);

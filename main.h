@@ -14,7 +14,7 @@ int print_binary(unsigned int i);
 int print_hexa_cap(unsigned int i);
 int print_hexa_low(unsigned int i);
 int print_octal(unsigned int i);
-int print_unsigned(unsigned int i);
+int print_ui(unsigned int i);
 int print_rev(char *s);
 int print_rot13(char *s);
 int print_int_helper(int i);
