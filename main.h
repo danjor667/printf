@@ -18,5 +18,7 @@ int print_ui(unsigned int i);
 int print_rev(char *s);
 int print_rot13(char *s);
 int print_int_helper(int i);
+int print_intv2(int i);
+
 
 #endif
