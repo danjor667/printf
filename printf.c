@@ -21,7 +21,7 @@ int _printf(const char *format, ...)
 			else if (format[i + 1] == '%')
 				count += _putchar('%');
 			else if (format[i + 1] == 'd' || format[i + 1] == 'i')
-				count += print_int(va_arg(args, int));
+				count += print_intv2(va_arg(args, int));
 			else if (format[i + 1] == 'b')
 				count += print_binary(va_arg(args, unsigned int));
 			else if (format[i + 1] == 'o')
