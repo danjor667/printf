@@ -2,7 +2,8 @@
 /**
  * print_rev - reverse inputed string parameter value
  * @s: input string parameter(array char)
- * Return: integer representing length
+ * Return: integer representing length or num
+ * of char printed
  */
 int print_rev(char *s)
 {

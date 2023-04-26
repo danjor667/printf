@@ -2,7 +2,7 @@
 /**
  * print_rot13 - replaces each alphabets of a string
  * @s: string to be deciphered
- * Return: integer
+ * Return: integer length
  */
 int print_rot13(char *s)
 {
