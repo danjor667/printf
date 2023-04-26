@@ -2,9 +2,8 @@
 #include <stdarg.h>
 #include <stdlib.h>
 /**
- * print_intv2 - function to print
- * an int
- * @i: input int
+ * print_intv2 - function to print an int
+ * @i: input int to bd printed
  * Return: int number of char printed
  */
 int print_intv2(int i)
