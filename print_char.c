@@ -5,7 +5,7 @@
 /**
  * print_char - a function to print a character
  * @c: the char to be printed
- * Return: 1
+ * Return: Always 1 (success)
  */
 int print_char(char c)
 {
