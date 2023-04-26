@@ -4,8 +4,8 @@
 /**
  * print_ui - a function that print
  * an unsigned int
- * @i: input number
- * Return: int, the number of char printed
+ * @i: input number to be printed
+ * Return:  length of char printed
  */
 int print_ui(unsigned int i)
 {
