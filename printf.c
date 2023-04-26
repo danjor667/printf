@@ -31,9 +31,9 @@ int _printf(const char *format, ...)
 			else if (format[i + 1] == 'X')
 				count += print_hexa_cap(va_arg(args, unsigned int));
 			else if (format[i + 1] == 'x')
-			{
 				count += print_hexa_low(va_arg(args, unsigned int));
-			}
+			else if (format[i + 1] == 'R')
+				count += print_rot13(va_arg(args, char*));
 			i++;
 		}
 		else
