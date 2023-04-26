@@ -5,7 +5,7 @@
 /**
  * print_int - a function that print integers
  * @i: the interger to print
- * Return: number of digit printed
+ * Return: the length  of digit printed
  */
 int print_int(int i)
 {
