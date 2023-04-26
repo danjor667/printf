@@ -4,7 +4,7 @@
 /**
  * print_binary - a function to print the binary representatio
  * of a deciml number
- * @i: decimal input
+ * @i: integer input(to be converted)
  * Return: number of digits of binary
  */
 int print_binary(unsigned int i)
