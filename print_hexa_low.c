@@ -4,7 +4,7 @@
 /**
  * print_hexa_low - a functio that print the
  * hexadecimal representeion of an num
- * @i: input number
+ * @i: input number( to be converted)
  * Return: int, number of char printed
  */
 int print_hexa_low(unsigned int i)
