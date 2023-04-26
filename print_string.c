@@ -4,8 +4,9 @@
 #include <stdarg.h>
 /**
  * print_string - a function that print a string
+ * and returns the length
  * @s: the string to be printed
- * Return: the lenght of the printed string
+ * Return: lenght of the printed string
  */
 int print_string(char *s)
 {
