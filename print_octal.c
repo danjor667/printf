@@ -2,8 +2,8 @@
 #include "main.h"
 /**
  * print_octal - function to print the octal
- * representation of a decimal num
- * @i: input decimal number
+ * representation of a decimal number
+ * @i: input decimal number(to  be converted
  * Return: the num of digit printed
  */
 int print_octal(unsigned int i)
