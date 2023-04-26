@@ -6,7 +6,7 @@
 /**
  * _putchar - func to print a character
  * @c: character to print
- * Return: 1
+ * Return: Always 1 (success)
  */
 int _putchar(char c)
 {
