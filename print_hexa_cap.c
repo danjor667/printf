@@ -3,8 +3,8 @@
 #include <stdlib.h>
 /**
  * print_hexa_cap - a function that print
- * the hexa decimal equivilnt of a num
- * @i: input number
+ * the hexa decimal equivilent of a num
+ * @i: input number (to be converted)
  * Return: int, number of char printed
  */
 int print_hexa_cap(unsigned int i)
